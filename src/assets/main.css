@@ -1,6 +1,60 @@
 * {
-  background-color: black;
-  color: rgba(207, 207, 207, 0.837)
+
+  background-color: var(--background);
+  font-family: var(--font);
+  color: var(--green);
+
+  /* variables */
+  --background: #22212C;
+  --font: 'IBM Plex Mono', monospace;
+
+  --foreground: #f8f8f2;
+  --comment: #6272a4;
+  --cyan: #92FFFF;
+  --purple: #9580FF;
+  --green: #8AFF80;
+  --white: #F8F8F2;
+  --red: #FF9580;
+  --yellow: #FFFF80;
+  --pink: #FF80BF;
+  --orange: #FFCA80;
+  --disabled: #F8F8F2;
+}
+
+
+
+.donut {
+  font-size: 14pt; 
+  margin-top: 10%;
+  font-weight: bold;
+  /* margin: auto;  */
+  /* width: 50%; */
+
+}
+
+
+body {
+  display: flex;
+  justify-content: center;
+}
+
+.host {
+  font-size: 16pt;
+  font-weight: bold;
+  color: var(--orange);
+}
+
+.comment {
+  color: var(--comment);
+}
+
+.search{
+  font-size: 16pt;
+  caret-color:var(--orange);
+  caret-shape: block;
+  color: #ccc;
+  margin-left: 0.5rem;
+  font-weight: bold;
 }
 
 input {

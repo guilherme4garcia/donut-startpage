@@ -9,6 +9,15 @@ const router = createRouter({
       name: 'home',
       component: StartView
     },
+    {
+      // /search/screens -> /search?q=screens
+      path: '/search/:searchText',
+      redirect: to => {
+        // the function receives the target route as the argument
+        // we return a redirect path/location here.
+        return { path: '/search', query: { q: to.params.searchText } }
+      },
+    }
   ]
 })
 
