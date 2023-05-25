@@ -2,7 +2,6 @@
 
   background-color: var(--background);
   font-family: var(--font);
-  color: var(--green);
 
   /* variables */
   --background: #22212C;
@@ -19,9 +18,31 @@
   --pink: #FF80BF;
   --orange: #FFCA80;
   --disabled: #F8F8F2;
+
 }
 
+a {
+  color: var(--orange);
+  text-decoration: none;
+}
 
+a:hover {
+  background-image: linear-gradient(to right, var(--cyan), var(--green));
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+}
+
+.box {
+}
+
+.comment {
+  color: var(--comment);
+}
 
 .donut {
   font-size: 14pt; 
@@ -29,13 +50,16 @@
   font-weight: bold;
   /* margin: auto;  */
   /* width: 50%; */
+  background-image: linear-gradient(to right, var(--cyan), var(--green));
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 
 }
 
-
-body {
-  display: flex;
-  justify-content: center;
+.gradient {
+  background-image: linear-gradient(to right, var(--cyan), var(--green));
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .host {
@@ -44,20 +68,23 @@ body {
   color: var(--orange);
 }
 
-.comment {
-  color: var(--comment);
-}
-
-.search{
-  font-size: 16pt;
-  caret-color:var(--orange);
-  caret-shape: block;
-  color: #ccc;
-  margin-left: 0.5rem;
-  font-weight: bold;
-}
-
 input {
   border: none;
   outline: none;
 }
+
+.links {
+  display: grid;
+  margin-top: 75%;
+}
+
+
+.search{
+  font-size: 16pt;
+  caret-color:var(--orange);
+  caret-shape: underscore;
+  color: var(--white);
+  margin-left: 0.5rem;
+  font-weight: bold;
+}
+
