@@ -26,6 +26,17 @@ a {
   text-decoration: none;
 }
 
+
+.indicator {
+}
+
+.indicator:focus {
+  visibility: hidden; 
+}
+
+a:focus {
+}
+
 a:hover {
   background-image: linear-gradient(to right, var(--cyan), var(--green));
   background-clip: text;
@@ -34,21 +45,24 @@ a:hover {
 
 body {
   display: flex;
-  justify-content: center;
+  
 }
 
-.box {
+.app {
+  height: auto;
+  width: 70%;
 }
 
 .comment {
   color: var(--comment);
+  
 }
 
 .donut {
   font-size: 14pt; 
   margin-top: 10%;
   font-weight: bold;
-  /* margin: auto;  */
+  /* margin-right: 2rem;  */
   /* width: 50%; */
   background-image: linear-gradient(to right, var(--cyan), var(--green));
   background-clip: text;
@@ -75,7 +89,7 @@ input {
 
 .links {
   display: grid;
-  margin-top: 75%;
+  /* margin-top: 75%; */
 }
 
 
@@ -86,5 +100,11 @@ input {
   color: var(--white);
   margin-left: 0.5rem;
   font-weight: bold;
+  max-height: auto;
+  width: 50%;
 }
 
+.terminal {
+  display: flex;
+  max-height: auto;
+}

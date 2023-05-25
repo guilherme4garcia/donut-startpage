@@ -4,18 +4,20 @@
 <template>
   <main>
     <div>
-
+      <div style="margin-top: 20rem;margin-bottom: 8rem;">
+        <Clock></Clock>
+      </div>
       <div class="links">
+        <a href="https://calendar.google.com/calendar/">Calendar</a>
         <a href="https://github.com">Github</a>
         <a href="https://gmail.com">Gmail</a>
         <a href="https://notion.so">Notion</a>
-        <a href=""></a>
       </div>
       <div id="comment">
         <p class="comment"> // Everything not saved will be lost... </p>
       </div>
-      <div id="terminal-line" style="display: flex;">
-        <h1 class="host">guilherme@moog:</h1>
+      <div id="terminal-line" class="terminal">
+        <h1 class="host">guilherme@moog:~$</h1>
         <input class="search" type="text" v-model="terminal" name="" id="" @keyup.enter="search" autofocus>
       </div>
 
@@ -26,6 +28,7 @@
 
 <script>
   import { onMounted, ref, toRaw } from 'vue';
+  import Clock from '../components/Clock.vue'
 
   const search = () => {
     if(!terminal.value) return
@@ -48,7 +51,7 @@
 
   export default {
     components: {
-     
+      Clock
     },
     data() {
       return {
