@@ -1,6 +1,5 @@
-# startpage
+# [Live Preview](https://d0nut.netlify.app/)
 
-[Live Preview](https://donutpage.netlify.app/)
 
 ## Recommended IDE Setup
 
